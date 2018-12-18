@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="style/fonts.css">
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/payment.css">
+  <link rel="stylesheet" href="style/nav.css">
   <!--[if lt IE 9]>
     <script src="[PATH]/html5shiv.js"></script>
     <![endif]-->
@@ -23,46 +24,47 @@
   <title>Bus to Show</title>
 </head>
 
-
 <body>
   <div class="content-wrapper">
     <div class="layer">
 
-
-      <!-- Nav -->
-      <div class="navbar">
-        <nav class="z-depth-0 navbar">
+      <!-- NAV -->
+      <div class="navbar-fixed">
+        <nav>
           <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo center">
-              <img src="logos/BTS_LOGO-white-no-background-hi-res (1).png" alt="bts-logo" class="logo">
-            </a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down nav-links">
-              <li><a class="nav-link" href="index.html#calendar">CALENDAR</a></li>
-              <li><a class="nav-link" href="charters.html">CHARTERS</a></li>
-              <li><a class="nav-link" href="about.html">ABOUT</a></li>
-              <button data-target="modal1" class="login-btn btn modal-trigger">LOGIN</button>
-              <button data-target="modal2" class="signup-btn btn modal-trigger">SIGN UP</button>
-            </ul>
-          </div>
+            <div class="brand-logo center"><img src="logos/bts-logo-white-nobg.png" alt="BUS TO SHOW"></div>
+            <div class="container">
+              <ul class="left hide-on-med-and-down">
+                <li><a class="nav-custom-padding" href="index.html#calendar">CALENDAR</a></li>
+                <li><a class="nav-custom-padding" href="about.html">ABOUT</a></li>
+                <li><a class="nav-custom-padding" href="charters.html">CHARTERS</a></li>
+              </ul>
+            </div>
+            <a href="" class="sidenav-trigger" data-target="slide-out"><i class="material-icons medium">menu</i></a>
+            <div class="container">
+              <ul class="right hide-on-med-and-down">
+                <li><a class="nav-custom-padding" href="#">ARTISTS</a></li>
+                <li><a class="nav-custom-padding modal-trigger" data-target="modal2">SIGN UP</a></li>
+                <li><a class="nav-custom-padding modal-trigger" data-target="modal1">LOGIN</a></li>
+              </ul>
         </nav>
       </div>
-
-      <ul class="sidenav" id="mobile-demo">
-        <br>
-        <a href="index.html" class="brand-logo center">
-          <img src="logos/BTS_LOGO-gray-with-transparent-background-hi-res copy.png" alt="bts-logo" class="logo">
-        </a>
-        <br>
-        <div class="divider"></div>
-        <br>
-        <li><a class="sidenav-close sidenav-link" href="#calendar">CALENDAR</a></li>
-        <li><a class="sidenav-close sidenav-link" href="charters.html">CHARTERS</a></li>
-        <li><a class="sidenav-close sidenav-link" href="about.html">ABOUT</a></li>
-        <div class="divider"></div>
-        <li><a class="sidenav-close sidenav-link modal-trigger" data-target="modal1">LOGIN</a></li>
-        <li><a class="sidenav-close sidenav-link signup-link" href="signup.html">SIGN UP</a></li>
-      </ul>
+      <!-- SIDENAV -->
+      <ul id="slide-out" class="sidenav grey lighten-2">
+        <div class="container center">
+          <a href="index.html" class="brand-logo">
+            <img src="logos/bts-logo-gray-nobg.png" alt="BUS TO SHOW">
+          </a>
+        </div>
+        <li><a class="sidenav-close sidenav-link" href="index.html#calendar">CALENDAR</a></li>
+        <li><a class="sidenav-close sidenav-link" href="#about">ABOUT</a></li>
+        <li><a class="sidenav-close sidenav-link" href="index.html#charters">CHARTERS</a></li>
+        <li><a class="sidenav-close sidenav-link" href="#artists">ARTISTS</a></li>
+        <li><a class="sidenav-close sidenav-link modal-trigger" data-target="modal2" href="#">SIGN UP</a></li>
+        <li><a class="sidenav-close sidenav-link modal-trigger" data-target="modal1" href="#">LOGIN</a></li>
+      </ul> <!-- END OF SIDENAV -->
+    </div>
+    </div> <!-- END OF NAV -->
 
       <!-- Modal 1 -->
       <div id="modal1" class="modal login modal-fixed-footer">
