@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sideNav = document.querySelector('#mobile-demo')
 
 
+
   // Add call to user's favorited
   const userUpcomingEvents = []
   const userWatchlist = []
@@ -90,8 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           upcomingATag.setAttribute('class', 'side-li waves-effect')
 
-          upcomingATag.innerText = `${event.headliner} | ${moment(event.date).format("MM/DD/YY")} | ${event.time} | ${event.venue}`
-          // 'Headliner | Date | Time | Venue'
+          upcomingATag.innerText = `${event.headliner} || ${moment(event.date).format("MM/DD/YY")}`
 
           upcomingEventField.appendChild(upcomingLi)
           upcomingLi.appendChild(upcomingATag)
@@ -152,6 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
         upcomingEventField.appendChild(watchlistLi)
         watchlistLi.appendChild(watchlistATag)
       }
+
 
 
     }
